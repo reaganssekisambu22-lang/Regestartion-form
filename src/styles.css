@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background: linear-gradient(135deg, #eef7ff, #f7f0ff);
+  color: #16213e;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+h1 {
+  color: #173f7a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.card,
+form {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px #1d35571c;
+}
+
+label {
+  display: block;
+  margin: 0.8rem 0;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #aac;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-family: inherit;
+}
+
+button {
+  background: #0066cc;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0050a0;
+}
+
+/* These two lines are what make the red errors and green success message show up */
+.error { color: #d33; font-size: 0.85rem; display: block; margin-top: 4px; font-weight: normal; text-transform: none; }
+.success { color: #080; font-weight: bold; margin-top: 10px; }
